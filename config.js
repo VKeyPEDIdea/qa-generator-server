@@ -6,19 +6,8 @@ const config = {
         displayErrors: false
     },
     static: {
+        root: './build',
         port: 8000,
-    },
-    dbPool: {
-        host: '127.0.0.1',
-        port: 5432,
-        database: 'example',
-        user: 'marcus',
-        password: 'marcus',
-    },
-    pg: {
-        database: 'postgres',
-        user: 'postgres',
-        password: 'postgres',
     },
     hashSettings: {
         encodingScheme: 'base64',
@@ -27,7 +16,10 @@ const config = {
         transport: 'http',
         host: '127.0.0.1',
         port: '8001'
-    }
+    },
+    projects: {
+        path: './db/projects',
+    },
 };
 
 module.exports = config;

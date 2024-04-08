@@ -1,5 +1,6 @@
 declare namespace config {
   const static: {
+    root: string;
     port: number;
   };
   const api: {
@@ -11,19 +12,10 @@ declare namespace config {
     timeout: number;
     displayErrors: boolean;
   };
-  const dbPool: {
-    host: string;
-    port: number;
-    database: string;
-    user: string;
-    password: string;
-  };
-  const pg: {
-    database: string;
-    user: string;
-    password: string;
-  };
   const hashSettings: {
     encodingScheme: string;
   }
+  const projects: {
+    path: string;
+  };
 }
