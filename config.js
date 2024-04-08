@@ -6,7 +6,7 @@ const config = {
         displayErrors: false
     },
     static: {
-        root: './build',
+        root: './client',
         port: 8000,
     },
     hashSettings: {
